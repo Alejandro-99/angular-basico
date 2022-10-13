@@ -22,15 +22,15 @@ export class DbzService {
     }
   ]
 
-  get personajes(): Personaje[]{
+  get personajes(): Personaje[] {
     return [...this._personajes]
   }
 
-  constructor() { 
+  constructor() {
     console.log("Service on")
   }
 
-  agregarNuevoPj( pj: Personaje ){
+  agregarNuevoPj(pj: Personaje) {
     this._personajes.push(pj);
   }
 }
